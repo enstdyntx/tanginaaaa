@@ -1,0 +1,27 @@
+ .swiper-slide {
+    font-family: 'Georgia', serif; /* Georgia */
+    color: rgb(14, 10, 10); /* Text color */
+    text-align: center; /* Center-align text */
+  }
+  
+  .classy-text {
+    margin: 50px;
+  }
+  
+  h1 {
+    font-size: 3em; /* Adjust font size */
+    font-style: serif; /*Times New Roman*/
+    font-weight: 600; /* Boldness */
+    margin-bottom: 20px; /* Spacing */
+  }
+  
+  p {
+    font-size: 1.5em; /* Adjust font size */
+    font-style: serif; /*Times New Roman*/
+    color: rgb(37, 32, 32); /* Text color */
+    line-height: 1.5; /* Line height */
+  }
+
+
+
+ 

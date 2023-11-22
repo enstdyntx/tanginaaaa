@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <button onclick="document.getElementById('myAudio').play()">Play Audio</button>
+<audio id="myAudio" src="audio/ENHYPEN (엔하이픈) 'BLOSSOM' Instrumental.mp3" preload="auto">
+</audio>
+  <meta charset="utf-8" />
+  <title>INTRODUCTION</title>
+  <a href="index.html">HOME</a>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: rgb(186, 238, 122);
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: rgb(179, 247, 134);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color: #000;
+      opacity: 1;
+      background: rgba(175, 241, 121, 0.2);
+    }
+
+    .swiper-pagination-bullet-active {
+      color: #181414;
+      background: rgb(165, 231, 120)
+    }
+  </style>
+</head>
+<link rel="stylesheet" href="in.css">
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <h1>FREE TIME</h1>
+            <P>My hobbies are watching movies, kdrama, reading books while listening to music. I also love doing makeups if I have free time. I also play mobile games whenever I have free time or whenever I feel stress. Furthermore, I enjoy having coffee with my friends and catching up on current events. </P>
+                <img src="images/HOBBIES.jpg" alt="images">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/MAE.jpg" alt="images">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/COMFORT.jpg" alt="images">
+        <link rel="stylesheet" href="in.css">
+        <h1>COMFORT</h1>
+            <P>One of my favorite hobbies is watching Kpop. I am consistently around at kpop-related events. It provides me with more opportunities to travel and meet new people in my life. Enhypen is one of my life's motivations, mentally, academically, emotionally, and physically. When I'm unhappy or need anything to clear my thoughts, I just watch their contents to lighten my mood, which is why I consider them to be my comfort, home, life line, and safe haven.</P>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>

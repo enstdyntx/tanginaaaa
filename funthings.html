@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <button onclick="document.getElementById('myAudio').play()">Play Audio</button>
+<audio id="myAudio" src="audio/Rhodessa - Kisame _ INSTRUMENTAL.mp3" preload="auto">
+</audio>
+  <meta charset="utf-8" />
+  <title> INTEREST</title>
+  <a href="interest.html">BACK</a>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+        background: rgb(196, 121, 240);
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 9px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+      font-size: 15px;
+      background: rgb(241, 125, 235);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color: #000;
+      opacity: 1;
+      background: rgba(182, 129, 226, 0.2);
+    }
+
+    .swiper-pagination-bullet-active {
+      color: #181414;
+      background: rgb(221, 141, 245);
+    }
+  </style>
+</head>
+<link rel="stylesheet" href="in.css">
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <h1>MY PERSONAL INTEREST</h1>
+            <P>I used to play volleyball in junior high and was on a volleyball team that competed in intramurals at our school. I also joined a dance team back then, and I can still enjoy dancing even now. I enjoy reading and listening to music. I'm also interested in exploring the art of painting because I'm convinced that it will provide me with additional meditation while also allowing me to have fun at the same time.
+            </P>
+                <img src="images/1stinterest.jpg" alt="images">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/interest.jpg" alt="images">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/2ndinterest.jpg" alt="images">
+        <link rel="stylesheet" href="in.css">
+        <h1>THINGS THAT I ENJOY</h1>
+            <P>There are so many things that I enjoy doing, and some of them are my passion. During my senior year of high school, I took a Culinary course and received a certificate of completion. I enjoy baking and cooking. Whenever I cook, I get into an enthusiastic mood. Even now, I'm the one who always cooks for our family's meals. I tried baking and selling them at a reasonable price, but I'm more focused on my college year right now, so I can't focus on baking again. This kind of thing makes my life more joyful.</P>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>
